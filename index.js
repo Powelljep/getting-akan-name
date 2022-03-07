@@ -43,8 +43,8 @@ const displayAkanName = () => {
     if(femaleGender.checked) {
         maleGender.checked = false;
         getAkanName(femaleNames);
-        document.getElementById("show-akan-name").innerHTML =`Your Akan name is: ${akanName}`
-        document.getElementById("show-akan-name").style.display = 'block'
+        document.getElementById("show-akan-name").innerHTML =`Your Akan name is: ${akanName}`;
+        document.getElementById("show-akan-name").style.display = 'block';
     } else if( maleGender.checked) {
         femaleGender.checked = false
         getAkanName(maleNames);

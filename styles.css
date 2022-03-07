@@ -1,11 +1,29 @@
-bod {
-    width: auto;
+body {
+    background-color: rgb(5, 5, 46);
+    color: #ffffff;
 }
 h1,h3 {
     font-family: 'Noto Sans', sans-serif;
 }
+h1 {
+    text-align: center;
+}
 
-.show-akan-name {
-    font-family: 'Lobster', cursive;
-    font-size: 40px;
+
+.form {
+    width: 500px;
+    background-color: rgb(5, 41, 41);
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.submit {
+    width: 150px;
+    padding: 10px;
+    margin: 25px;
+    font-size: 2em;
+    border-radius: 30px;
+    background-color: coral;
+    font-weight: bold;
 }

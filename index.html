@@ -17,23 +17,26 @@
         <p>Do you know what we would call you in Ghana if you were born <br/>there as per the day of the week?</p>
         <p>Please fill in the form below to get your Ghanian Akan name: </p>
 
-        <form onsubmit="getUserInput(event)">
+        <div class=" form">
+            <form onsubmit="getUserInput(event)">
 
-            <h3>DOB</h3>
-
-            <label for="bith-date">Enter Date of Birth:</label>
-            <input type="date" id="birth-date">
-
-            <h3>Gender</h3>
-
-            <label for="male">Male:</label>
-            <input type="radio" id="male" value="Male" name="gender"><br>
-            <label for="female">Female:</label>
-            <input type="radio" id="female" value="Female" name="gender"><br>
-
-            <input type="submit" value="Submit">
-
-        </form>
+                <h3>DOB</h3>
+    
+                <label for="bith-date">Enter Date of Birth:</label>
+                <input type="date" id="birth-date">
+    
+                <h3>Gender</h3>
+    
+                <label for="male">Male:</label>
+                <input type="radio" id="male" value="Male" name="gender"><br>
+                <label for="female">Female:</label>
+                <input type="radio" id="female" value="Female" name="gender"><br>
+    
+                <input type="submit" value="Submit" class="submit">
+    
+            </form>
+        </div>
+        
 
         <p id="show-akan-name"></p>
 
