@@ -22,13 +22,13 @@ const getUserInput = function (event) {
     year = parseInt(dateDetails[0].slice(2,4));
     month = parseInt(dateDetails[1]);
     day = parseInt(dateDetails[2]);
-    dayOfTheWeek = Math.floor(calculateDayOfTheWeek(century,year,month,day).toFixed())
-    
+    dayOfTheWeek = Math.floor(calculateDayOfTheWeek(century,year,month,day))
+    displayAkanName();
 }
 
 const getAkanName = (genderArray) => {
     for(let i = 0; i<genderArray.length; i++){
-        if(daysOfTheWeek[i]=== daysOfTheWeek[dayOfTheWeek-1]){
+        if(daysOfTheWeek[i]=== daysOfTheWeek[dayOfTheWeek]){
             akanName = genderArray[i];
         }
     }
@@ -41,14 +41,13 @@ const calculateDayOfTheWeek = (century, year, month , day)=> {
 const displayAkanName = () => {
     
     if(femaleGender.checked) {
-        mGender.checked = false;
+        maleGender.checked = false;
         getAkanName(femaleNames);
         document.getElementById("show-akan-name").innerHTML =`Your Akan name is: ${akanName}`
         document.getElementById("show-akan-name").style.display = 'block'
     } else if( maleGender.checked) {
-        mGender.checked = false
+        femaleGender.checked = false
         getAkanName(maleNames);
-        console.log("Akan name "+akanName)
         document.getElementById("show-akan-name").innerHTML =`Your Akan name is: ${akanName}`
         document.getElementById("show-akan-name").style.display = 'block';
     }
