@@ -1,0 +1,11 @@
+bod {
+    width: auto;
+}
+h1,h3 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.show-akan-name {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
