@@ -9,6 +9,9 @@ let day = "";
 let dayOfTheWeek= "";
 let akanName = ""
 
+const femaleGender = document.getElementById("female");
+const maleGender = document.getElementById("male");
+
 document.getElementById("show-akan-name").style.display = 'none';
 
 const getUserInput = function (event) {
@@ -33,4 +36,20 @@ const getAkanName = (genderArray) => {
 
 const calculateDayOfTheWeek = (century, year, month , day)=> {
     return ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7;
+}
+
+const displayAkanName = () => {
+    
+    if(femaleGender.checked) {
+        mGender.checked = false;
+        getAkanName(femaleNames);
+        document.getElementById("show-akan-name").innerHTML =`Your Akan name is: ${akanName}`
+        document.getElementById("show-akan-name").style.display = 'block'
+    } else if( maleGender.checked) {
+        mGender.checked = false
+        getAkanName(maleNames);
+        console.log("Akan name "+akanName)
+        document.getElementById("show-akan-name").innerHTML =`Your Akan name is: ${akanName}`
+        document.getElementById("show-akan-name").style.display = 'block';
+    }
 }
