@@ -20,3 +20,11 @@ const getUserInput = function (event) {
     dayOfTheWeek = Math.floor(calculateDayOfTheWeek(century,year,month,day).toFixed())
     
 }
+
+const getAkanName = (genderArray) => {
+    for(let i = 0; i<genderArray.length; i++){
+        if(daysOfTheWeek[i]=== daysOfTheWeek[dayOfTheWeek-1]){
+            akanName = genderArray[i];
+        }
+    }
+}
